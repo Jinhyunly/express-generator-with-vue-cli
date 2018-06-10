@@ -1,60 +1,7 @@
-<template>
-  <div id="app">
-    <router-view></router-view>
-    <navigation></navigation>
-  </div>
-</template>
-
-<script>
-import Navigation from './components/Navigation'
-import Cummunity from './components/Cummunity'
-
-export default {
-  name: 'app',
-  data () {
-    return {
-    }
-  },
-  components: {
-    Navigation,
-    Cummunity
-  }
-}
-</script>
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-select {
-    padding-left: 10px; 
-    border: 1px solid #006fff;
-    border-radius: 3px;
-    -webkit-appearance: none; /* 화살표 없애기 for chrome*/
-}
-select::-ms-expand {
-   display: none;            /* 화살표 없애기 for IE10, 11*/
-}
-
 
 /* 공통 */
-  .movie{
-    display: block;
-  }
-  [v-cloak] {
+[v-cloak] {
     display: none;
-  }
-  .nav_centent{
-    cursor: default;
-    text-decoration: none;
-    color: black;
   }
   
   body{
@@ -68,97 +15,75 @@ select::-ms-expand {
   /* home layout */
   
   body{
-  margin:0;
-  padding:0;
-}
-.container{
-  text-align: center;
-}
-#header{
-  height:55vh;
-}
-#something{
-  height:25vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: blanchedalmond;
-}
-#nav{
-  height:10vh;
+    margin:0;
+    padding:0;
+  }
+  .container{
+    text-align: center;
+  }
+  #header{
+    height:55vh;
+  }
+  #something{
+    height:25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+  }
+  #nav{
+    height:10vh;
+    
+  }
   
-}
-
-
-/* home header */
-
-
-#header #displayname{
-  text-align: right;
-  height: 5vh;
-  border-bottom: 0.1px solid black;
-  background-color: lightpink;
-}
-#header #displayCalender{
-  display: flex;
-  height: 30vh;
-  justify-content: space-around;
-}
-.displayCalender_view{
-  width:33.3%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.5px;
-}
-#displayDate{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 20vh;
-  background-color: blanchedalmond;
-}
-#displayDate_content{
-  font: 1px;
-}
-#displayDate h3{
-  margin:0
-}
-#displayDate_info{
-  font-size: 0.9rem;
-}
-
-
-#c1:hover, #c2:hover, #c3:hover{
-  background-color: lightpink;
-}
-
-
-/* home nav */
-#nav{
-  display: flex;
-  justify-content: space-around;
-  background-color: lightpink;
-  color : black;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   
-}
-.nav_centent{
-  width:25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.5px;
-}
-#home:hover, #calender:hover, #cummunity:hover, #hospital:hover{
-  background-color: white;
-}
+  /* home header */
+  
+  
+  #header #displayname{
+    text-align: right;
+    height: 5vh;
+    border-bottom: 0.1px solid black;
+    background-color: lightpink;
+    font-size: 3rem;
+  }
+  #header #displayCalender{
+    display: flex;
+    height: 30vh;
+    justify-content: space-around;
+  }
+  .displayCalender_view{
+    width:33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+  #displayDate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: blanchedalmond;
+    font-size : 3rem;
+  }
+  #displayDate_content{
+    font-size : 2rem;
+  }
+  #displayDate h3{
+    margin:0
+  }
+  #displayDate_info{
+    font-size: 2.4rem;
+  }
+  
+  
+  #c1:hover, #c2:hover, #c3:hover{
+    background-color: lightpink;
+  }
   
   
   /* home nav */
@@ -178,7 +103,7 @@ select::-ms-expand {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 0.5rem;
+    font-size: 2rem;
   }
   #home:hover, #calender:hover, #cummunity:hover, #hospital:hover{
     background-color: white;
@@ -458,4 +383,3 @@ select::-ms-expand {
   
   
   
-</style>

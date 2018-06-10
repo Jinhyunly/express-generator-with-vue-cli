@@ -9,6 +9,11 @@ Vue.prototype.$http = axios
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  data: {
+    query: ''
+  },
+  methods: {
+  },
   router,
   template: '<App/>',
   components: { App }
